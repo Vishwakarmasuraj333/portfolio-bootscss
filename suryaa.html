@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container {
+            max-width: 900px;
+            margin: 200px auto;
+            padding: 20px;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: 200px 2fr;
+            text-align: center;
+            align-items: center;
+            background-color: blue;
+            border-radius: 10px;
+            border: 1px solid yellow;
+            box-shadow: 0 14px 14px red;
+            padding: 20px;
+        }
+.card-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 200px 2fr;
+    gap: 20px;
+    align-items: center;
+    background-color: blue;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 14px 14px red;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.text {
+    color: yellow;
+}
+
+.text button {
+    padding: 12px 14px;
+    border: none;
+    border-radius: 12px;
+    margin-right: 10px;
+    background: linear-gradient(to left, yellow, green);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text button:hover {
+    background: linear-gradient(to left, rgb(212, 50, 142), rgb(19, 32, 210));
+    color: white;
+}
+
+@media (max-width:600px) {
+    .card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .card img{
+        align-items: center;
+
+    }
+    .text {
+        margin-top: 10px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="C:\Users\imdee\Downloads\suraj.jpeg" alt="suraj">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod, veniam tempora illo inventore,
+                    deleniti commodi dolore facere, nesciunt perferendis expedita et pariatur explicabo saepe recusandae
+                    adipisci dicta ad illum?</p>
+                <button>Hire me</button>
+                <button>Resume</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
